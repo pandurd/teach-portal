@@ -152,7 +152,7 @@ Use below steps
 $ git clone https://github.com/pandurd/teach-portal.git
 
 # Access
-$ cd TeachPortalAPI/TeachPortalAPI
+$ cd teach-portal/TeachPortalAPI/TeachPortalAPI
 
 # Install dependencies/test build
 $ dotnet build
