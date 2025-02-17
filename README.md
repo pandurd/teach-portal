@@ -5,9 +5,9 @@
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#sparkles-Design-Patterns-implemented">Design Patterns</a> &#xa0; | &#xa0;
-  <a href="#bangbang-Assumptions">Assumptions</a> &#xa0; | &#xa0;
-  <a href="#rocket-technologies_and_tools">Technologies</a> &#xa0; | &#xa0;
+  <a href="#sparkles-design-patterns">Design Patterns</a> &#xa0; | &#xa0;
+  <a href="#bangbang-assumptions">Assumptions</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies-and-tools">Technologies</a> &#xa0; | &#xa0;
   <a href="#running-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-app">APP</a> &#xa0;  &#xa0;
 </p>
@@ -21,7 +21,7 @@ Teach Portal is an Adminstation portal for Teachers.
 **Teacher**
 > Teacher Must use signup or login to access Teach Portal
 
-> Teacher must ;provide FirstName, LastName, Email and valid Password to Signup
+> Teacher must provide FirstName, LastName, Email and valid Password to Signup
 
 > Teacher must provide a valid username and password to Login
 
@@ -37,22 +37,22 @@ Teach Portal is an Adminstation portal for Teachers.
 
 ## :sparkles: Design Patterns ##
 
-:heavy_check_mark: Backend for FrontEnd \
+:heavy_check_mark: **Backend for FrontEnd** \
 React Web app should be deployed independtly with API as it backend
 
-:heavy_check_mark: Distributed Caching \
+:heavy_check_mark: **Distributed Caching** \
 Student list is cached in distributed cache (inmemory for task) only accessed from DB for a Teacher and invalidated if new student added
 
-:heavy_check_mark: Facade pattern \
+:heavy_check_mark: **Facade pattern** \
 Using Asp.Net identity for managing identity - Authentication and authorization
 
-:heavy_check_mark: Builder Design Pattern \
+:heavy_check_mark: **Builder Design Pattern** \
 Create different user objects for different roles for Token creation
 
-:heavy_check_mark: Respository Pattern \
+:heavy_check_mark: **Respository Pattern** \
 Student and Teacher data accessed via repository from DB via entity framework
 
-:heavy_check_mark: Proxy Pattern \
+:heavy_check_mark: **Proxy Pattern** \
 React uses service as proxy for API
 
 ## :bangbang: Assumptions ##
@@ -75,59 +75,47 @@ React uses service as proxy for API
 
 `Implemented`
 
-:heavy_check_mark: Feature 1\
-Teacher Signup
+:heavy_check_mark: **Teacher Signup** 
 
-:heavy_check_mark: Feature 2\
-Teacher Login
+:heavy_check_mark: **Teacher Login** 
 
-:heavy_check_mark: Feature 3\
-Create new Student
+:heavy_check_mark: **Create new Student** 
 
-:heavy_check_mark: Feature 4\
-Student List with Pagination
+:heavy_check_mark: **Student List with Pagination** 
 
-:heavy_check_mark: Feature 5\
-Teacher List with Student Count
+:heavy_check_mark: **Teacher List with Student Count** 
 
-:heavy_check_mark: Feature 6\
-Cache All Students for teacher in API
+:heavy_check_mark: **Cache All Students for teacher in API** 
 
 `Future Enhancements`
 
-:heavy_exclamation_mark: Feature 1\
-Student List with Global Search and Sorting with Spinning loader
+:heavy_exclamation_mark: Student List with Global Search and Sorting with Spinning loader 
 
-:heavy_exclamation_mark: Feature 2\
-Use redux store to store future complex pages
+:heavy_exclamation_mark: Use redux store to store future complex pages 
 
-:heavy_exclamation_mark: Feature 3\
-Move cache to Azure Redis
+:heavy_exclamation_mark: Move cache to Azure Redis 
 
-:heavy_exclamation_mark: Feature 4\
-Use PROD Azure SQL DB
+:heavy_exclamation_mark: Use PROD Azure SQL DB 
 
-:heavy_exclamation_mark: Feature 5\
+:heavy_exclamation_mark: Azure AD \
 Use Azure B2C/Azure Entra external ID for authentication/authorization to different roles
 Azure Entra external ID does not support username yet or does not have documentation.
 Azure b2c supports username
 Use oauth-proxy to protect all API instead using library(e.g. MSAL.js) to protect only current API
 
-:heavy_exclamation_mark: Feature 6\
-Change table and api for Tenant based product
+:heavy_exclamation_mark: Change table and api for Tenant based product
 
-:heavy_exclamation_mark: Feature 7\
-Whitelabel the Web and Product
+:heavy_exclamation_mark: Whitelabel the Web and Product with localization
 
 ## :rocket: Technologies and Tools ##
 
 The following tools were used in this project:
 
-API
+**API**
 - [.Net 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - [Visual studio 2022]
 
-Web
+**Web**
 - [React 19](https://react.dev/blog/2024/12/05/react-19)
 - [Node v22.14.0](https://nodejs.org/en/download)
 - [VS Code]
@@ -139,17 +127,17 @@ Web
 Run [StartApp.bat](https://github.com/pandurd/teach-portal/blob/main/StartApp.bat)
 This will start both API and Web in new shell
 
-OR
+**OR**
 
 Use Visual studio to open solution [TeachPortalAPI/TeachPortalAPI.sln](https://github.com/pandurd/teach-portal/blob/main/TeachPortalAPI/TeachPortalAPI.sln) for starting API
 
-OR
+**OR**
 
 Use below steps
 
 **API**
 
-Clone this repo
+> Clone this repo
 ```bash
 git clone https://github.com/pandurd/teach-portal.git
 ```
@@ -158,12 +146,12 @@ git clone https://github.com/pandurd/teach-portal.git
 cd teach-portal/TeachPortalAPI/TeachPortalAPI
 ```
 
-Install dependencies/test build
+> Install dependencies/test build
 ```bash
 dotnet build
 ```
 
-Run API
+> Run API
 ```bash
 dotnet run
 ```
@@ -171,18 +159,18 @@ dotnet run
 
 **Web**
 
-Navigate to root of repo
+> Navigate to root of repo
 
 ```bash
 cd teach-portal/teach-portal-web
 ```
 
-Install dependencies/test build
+> Install dependencies/test build
 ```bash
 npm i
 ```
 
-Run Web
+> Run Web
 ```bash
 npm run start
 ```
