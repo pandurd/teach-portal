@@ -165,11 +165,8 @@ $ dotnet run
 **Web**
 
 ```bash
-# Clone this project
-$ git clone https://github.com/pandurd/teach-portal.git
-
 # Access
-$ cd teach-portal-web
+$ cd teach-portal/teach-portal-web
 
 # Install dependencies/test build
 $ npm i
