@@ -157,7 +157,7 @@ $ cd teach-portal/TeachPortalAPI/TeachPortalAPI
 # Install dependencies/test build
 $ dotnet build
 
-# Run test
+# Run APi
 $ dotnet run
 
 ```
@@ -171,7 +171,7 @@ $ cd teach-portal/teach-portal-web
 # Install dependencies/test build
 $ npm i
 
-# Run test
+# Run Web
 $ npm run start
 
 ```
