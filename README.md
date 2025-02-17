@@ -99,23 +99,25 @@ Cache All Students for teacher in API
 Student List with Global Search and Sorting with Spinning loader
 
 :heavy_exclamation_mark: Feature 2\
-Move cache to Azure Redis
+Use redux store to store future complex pages
 
 :heavy_exclamation_mark: Feature 3\
-Use PROD Azure SQL DB
+Move cache to Azure Redis
 
 :heavy_exclamation_mark: Feature 4\
+Use PROD Azure SQL DB
+
+:heavy_exclamation_mark: Feature 5\
 Use Azure B2C/Azure Entra external ID for authentication/authorization to different roles
 Azure Entra external ID does not support username yet or does not have documentation.
 Azure b2c supports username
 Use oauth-proxy to protect all API instead using library(e.g. MSAL.js) to protect only current API
 
-:heavy_exclamation_mark: Feature 5\
+:heavy_exclamation_mark: Feature 6\
 Change table and api for Tenant based product
 
-:heavy_exclamation_mark: Feature 6\
+:heavy_exclamation_mark: Feature 7\
 Whitelabel the Web and Product
-
 
 ## :rocket: Technologies and Tools ##
 
@@ -150,30 +152,39 @@ Use below steps
 ```bash
 # Clone this project
 $ git clone https://github.com/pandurd/teach-portal.git
+```
 
+```bash
 # Access
 $ cd teach-portal/TeachPortalAPI/TeachPortalAPI
+```
 
+```bash
 # Install dependencies/test build
 $ dotnet build
-
-# Run APi
-$ dotnet run
-
 ```
+
+```bash
+# Run API
+$ dotnet run
+```
+
 
 **Web**
 
 ```bash
 # Access
 $ cd teach-portal/teach-portal-web
+```
 
+```bash
 # Install dependencies/test build
 $ npm i
+```
 
+```bash
 # Run Web
 $ npm run start
-
 ```
 
 ## :checkered_flag: App ##
