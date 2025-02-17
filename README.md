@@ -151,21 +151,21 @@ Use below steps
 
 # Clone this repo
 ```bash
-$ git clone https://github.com/pandurd/teach-portal.git
+git clone https://github.com/pandurd/teach-portal.git
 ```
 
 ```bash
-$ cd teach-portal/TeachPortalAPI/TeachPortalAPI
+cd teach-portal/TeachPortalAPI/TeachPortalAPI
 ```
 
 # Install dependencies/test build
 ```bash
-$ dotnet build
+dotnet build
 ```
 
 # Run API
 ```bash
-$ dotnet run
+dotnet run
 ```
 
 
@@ -173,18 +173,18 @@ $ dotnet run
 
 Navigate to root of repo
 
-```bash
-$ cd teach-portal/teach-portal-web
+```cmd
+cd teach-portal/teach-portal-web
 ```
 
 # Install dependencies/test build
 ```bash
-$ npm i
+npm i
 ```
 
 # Run Web
 ```bash
-$ npm run start
+npm run start
 ```
 
 ## :checkered_flag: App ##
