@@ -149,41 +149,41 @@ Use below steps
 
 **API**
 
+# Clone this repo
 ```bash
-# Clone this project
 $ git clone https://github.com/pandurd/teach-portal.git
 ```
 
 ```bash
-# Access
 $ cd teach-portal/TeachPortalAPI/TeachPortalAPI
 ```
 
-```bash
 # Install dependencies/test build
+```bash
 $ dotnet build
 ```
 
-```bash
 # Run API
+```bash
 $ dotnet run
 ```
 
 
 **Web**
 
+Navigate to root of repo
+
 ```bash
-# Access
 $ cd teach-portal/teach-portal-web
 ```
 
-```bash
 # Install dependencies/test build
+```bash
 $ npm i
 ```
 
-```bash
 # Run Web
+```bash
 $ npm run start
 ```
 
